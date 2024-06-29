@@ -1,0 +1,40 @@
+<div class="row align-items-center" >
+  <div class="col-md-4">
+    <h2 class="m-5">Product Categories: </h2>
+    <p-carousel [value]="productItem.images"  [numVisible]="1" 
+    [numScroll]="3" 
+    [circular]="true" 
+    autoplayInterval="3000">
+    @for (item of productItem.images; track $index) {
+       
+            <ng-template let-item pTemplate="item">
+              <div>
+                <img [src]="item" alt="...">
+            </div>
+            </ng-template>
+
+    }
+</p-carousel>
+
+   
+</div>
+
+<div class="col-md-7">
+  <h1 class="h2 fw-bolder">{{productItem.title}} : <span></span></h1>
+  <p class="font-sm fw-bolder">{{productItem.description}}</p>
+  <div class="d-flex justify-content-between align-items-center">
+    <p> <span>Quantity : </span>{{productItem.quantity}} Pieces</p>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <p> <span>Sold : </span>{{productItem.sold}} Pieces</p>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <p> <span>Price : </span>{{productItem.price}} EGP</p>
+  </div>
+  
+  
+  <button class="btn bg-success text-white w-100 d-block m-auto" (click)="addProduct(productItem._id)">
+    + Add
+  </button>
+</div>
+</div>

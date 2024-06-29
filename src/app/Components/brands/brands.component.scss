@@ -1,0 +1,12 @@
+.productCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+
+.box:hover{
+    scale: 110%;
+    cursor: pointer;
+}

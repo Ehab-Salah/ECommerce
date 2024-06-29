@@ -1,0 +1,15 @@
+.productCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+.box:hover{
+    scale: 110%;
+    cursor: pointer;
+}

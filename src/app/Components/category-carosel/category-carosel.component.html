@@ -1,0 +1,15 @@
+
+
+<div class="m-5">
+  <h2 class="m-5">Product Categories: </h2>
+  <p-carousel [value]="categories" [numVisible]="3" [numScroll]="3">
+      <ng-template let-product pTemplate="item">
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}">
+          <h4>{{ product.name }}</h4>
+        </div>
+      </ng-template>
+    </p-carousel>
+
+ 
+</div>

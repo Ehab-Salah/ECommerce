@@ -1,0 +1,27 @@
+.productCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.addButton{
+    display: none;
+    width: 70%;
+    align-self: center;
+    background-color: rgb(16, 160, 16);
+    color: white;
+    margin-bottom: 10px;
+    
+    
+    
+}
+.box:hover{
+    scale: 105%;
+    cursor: pointer;
+    border: 2px solid rgb(32, 248, 32);
+    .addButton{
+        display: block;
+      
+    }
+}
